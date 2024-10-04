@@ -110,6 +110,7 @@ const HomeScreen = () => {
   );
 };
 
+
 const WishlistScreen = () => {
   const wishlistItems = [
     {
@@ -288,6 +289,81 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     padding: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: "#eee",
+  },
+  headerTitle: {
+    fontSize: 20,
+    fontWeight: "bold",
+  },
+  headerIcons: {
+    flexDirection: "row",
+    width: 70,
+    justifyContent: "space-between",
+  },
+  headerAction: {
+    color: "#FF6347",
+    fontSize: 16,
+  },
+  wishlistItem: {
+    flexDirection: "row",
+    padding: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: "#eee",
+  },
+  wishlistImage: {
+    width: 80,
+    height: 80,
+    borderRadius: 8,
+  },
+  wishlistItemInfo: {
+    flex: 1,
+    marginLeft: 16,
+    justifyContent: "center",
+  },
+  wishlistItemName: {
+    fontSize: 16,
+    fontWeight: "bold",
+  },
+  wishlistItemPrice: {
+    fontSize: 14,
+    color: "#888",
+    marginTop: 4,
+  },
+  wishlistItemButton: {
+    backgroundColor: "#FF6347",
+    paddingHorizontal: 16,
+    paddingVertical: 8,
+    borderRadius: 20,
+    alignSelf: "center",
+  },
+  wishlistItemButtonText: {
+    color: "#fff",
+    fontWeight: "bold",
+  },
+  notificationItem: {
+    padding: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: "#eee",
+  },
+  notificationTitle: {
+    fontSize: 16,
+    fontWeight: "bold",
+    marginBottom: 8,
+  },
+  notificationContent: {
+    fontSize: 14,
+    color: "#666",
+  },
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+  },
+  header: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: 16,
   },
   headerTitle: {
     fontSize: 20,
@@ -361,81 +437,6 @@ const styles = StyleSheet.create({
     marginTop: 4,
     fontSize: 14,
     fontWeight: "bold",
-  },
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-  },
-  header: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: 16,
-    borderBottomWidth: 1,
-    borderBottomColor: "#eee",
-  },
-  headerTitle: {
-    fontSize: 20,
-    fontWeight: "bold",
-  },
-  headerIcons: {
-    flexDirection: "row",
-    width: 70,
-    justifyContent: "space-between",
-  },
-  headerAction: {
-    color: "#FF6347",
-    fontSize: 16,
-  },
-  wishlistItem: {
-    flexDirection: "row",
-    padding: 16,
-    borderBottomWidth: 1,
-    borderBottomColor: "#eee",
-  },
-  wishlistImage: {
-    width: 80,
-    height: 80,
-    borderRadius: 8,
-  },
-  wishlistItemInfo: {
-    flex: 1,
-    marginLeft: 16,
-    justifyContent: "center",
-  },
-  wishlistItemName: {
-    fontSize: 16,
-    fontWeight: "bold",
-  },
-  wishlistItemPrice: {
-    fontSize: 14,
-    color: "#888",
-    marginTop: 4,
-  },
-  wishlistItemButton: {
-    backgroundColor: "#FF6347",
-    paddingHorizontal: 16,
-    paddingVertical: 8,
-    borderRadius: 20,
-    alignSelf: "center",
-  },
-  wishlistItemButtonText: {
-    color: "#fff",
-    fontWeight: "bold",
-  },
-  notificationItem: {
-    padding: 16,
-    borderBottomWidth: 1,
-    borderBottomColor: "#eee",
-  },
-  notificationTitle: {
-    fontSize: 16,
-    fontWeight: "bold",
-    marginBottom: 8,
-  },
-  notificationContent: {
-    fontSize: 14,
-    color: "#666",
   },
 });
 
